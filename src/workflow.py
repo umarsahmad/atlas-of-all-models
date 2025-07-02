@@ -93,7 +93,7 @@ class Workflow:
         extracted_tools = getattr(state, "extracted_tools", [])
 
         if not extracted_tools:
-            print("⚠️ No extracted tools found, falling back to direct search")
+            print("No extracted tools found, falling back to direct search")
             search_results = self.firecrawl.search_models(state.query, num_results=4)
             tool_names = [
                 result.get("metadata", {}).get("title", "Unknown")

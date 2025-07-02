@@ -32,22 +32,6 @@ class DeveloperToolsPrompts:
                             Focus on extracting information relevant to AI researchers and software developers. 
                             Pay special attention to programming languages, model versions, APIs, SDKs, and ai model workflows."""
 
-    # @staticmethod
-    # def tool_analysis_user(company_name: str, content: str) -> str:
-    #     return f"""Company/Tool: {company_name}
-    #             Website Content: {content[:2500]}
-
-    #             Analyze this content from a ai developer's and ai researcher's perspective and provide:
-    #             - pricing_model: One of "Free", "Freemium", "Paid", "Enterprise", or "Unknown"
-    #             - is_open_source: true if open source, false if proprietary, null if unclear
-    #             - tech_stack: List of programming languages, frameworks, databases, APIs, or technologies supported/used
-    #             - description: Brief 1-sentence description focusing on what this tool does for developers
-    #             - api_available: true if REST API, GraphQL, SDK, or programmatic access is mentioned
-    #             - language_support: List of programming languages explicitly supported (e.g., Python, JavaScript, Go, etc.)
-    #             - integration_capabilities: List of tools/platforms it integrates with (e.g., GitHub, VS Code, Docker, AWS, etc.)
-
-    #             Focus on developer-relevant features like APIs, SDKs, language support, integrations, and development workflows."""
-
     @staticmethod
     def tool_analysis_user(company_name: str, content: str) -> str:
         return f"""AI Model: {company_name}
